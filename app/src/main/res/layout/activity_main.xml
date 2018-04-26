@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +19,6 @@
     >
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:orientation="horizontal"
@@ -20,7 +28,8 @@
         <LinearLayout
             android:paddingTop="50dp"
             android:paddingLeft="40dp"
-            android:layout_width="220dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="300dp"
             android:orientation="vertical"
             android:background="#0D111C"
@@ -32,7 +41,8 @@
                 android:textSize="36sp"
                 android:textColor="#fff"
                 android:fontFamily="sans-serif-medium"
-                android:text="Capture the point" />
+                android:text="Capture\nthe point"
+                tools:ignore="Suspicious0dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -42,7 +52,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-medium"
                 android:onClick="resetPoints"
-                android:text="Reset" />
+                android:text="Games Won / Reset" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,13 +82,11 @@
 
 
         </LinearLayout>
+
         <ImageView
-            android:layout_marginRight="0dp"
             android:layout_width="200dp"
             android:layout_height="300dp"
-            android:orientation="vertical"
-            android:src="@drawable/junk"
-            ></ImageView>
+            android:src="@drawable/junk"></ImageView>
     </LinearLayout>
 
 
@@ -140,6 +148,7 @@
                 android:layout_width="200dp"
                 android:layout_marginTop="5dp"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_height="wrap_content"
                 android:background="@drawable/layout_bg"
                 >
@@ -299,3 +308,4 @@
 
 
 </LinearLayout>
+</ScrollView>
