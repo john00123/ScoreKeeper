@@ -42,7 +42,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-medium"
                 android:onClick="resetPoints"
-                android:text="Games Won / Reset" />
+                android:text="Reset" />
 
             <LinearLayout
                 android:layout_width="match_parent"
